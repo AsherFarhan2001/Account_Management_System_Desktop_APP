@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.SelectionMenuController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="567.0" fitWidth="912.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="72.0" fitWidth="354.0">
+               <image>
+                  <Image url="@../../images/Allied-Bank.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="76.0" fitWidth="556.0" layoutX="357.0">
+               <image>
+                  <Image url="@../../images/s-l640.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="494.0" fitWidth="919.0" layoutX="-6.0" layoutY="75.0" >
+               <image>
+                  <Image url="@../../images/HD-wallpaper-blue-plain.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="user" alignment="TOP_CENTER" layoutX="173.0" layoutY="106.0" prefHeight="59.0" prefWidth="568.0" text="WELCOME  " textFill="#ff6200">
+               <font>
+                  <Font name="Gabriola" size="46.0" />
+               </font>
+            </Label>
+            <Button layoutX="125.0" layoutY="222.0" mnemonicParsing="false" onAction="#viewBalanceButtonPressed" opacity="0.78" prefHeight="83.0" prefWidth="252.0" style="-fx-background-color: GOLD;" text="VIEW BALANCE" textFill="#1a00ff">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="509.0" layoutY="222.0" mnemonicParsing="false" onAction="#withDrawCashButtonPressed" opacity="0.78" prefHeight="83.0" prefWidth="252.0" style="-fx-background-color: GOLD;" text="WITHDRAW CASH" textFill="#1a00ff">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="125.0" layoutY="347.0" mnemonicParsing="false" onAction="#DepositCashButtonPressed" opacity="0.78" prefHeight="83.0" prefWidth="252.0" style="-fx-background-color: GOLD;" text="DEPOSIT CASH" textFill="#1a00ff">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="509.0" layoutY="347.0" mnemonicParsing="false" onAction="#transferAmountButtonPressed" opacity="0.78" prefHeight="83.0" prefWidth="252.0" style="-fx-background-color: GOLD;" text="TRANSFER AMOUNT" textFill="#1a00ff">
+               <font>
+                  <Font name="Georgia" size="19.0" />
+               </font>
+            </Button>
+            <Button layoutX="346.0" layoutY="491.0" mnemonicParsing="false" onAction="#backButtonPressed" opacity="0.89" prefHeight="39.0" prefWidth="221.0" style="-fx-background-color: ORANGE; -fx-background-radius: 30PX;" text="CLOSE" textFill="#1d00ff">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

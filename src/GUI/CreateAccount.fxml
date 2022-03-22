@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="567.0" prefWidth="912.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.CreateAccountController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="567.0" fitWidth="912.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fitHeight="84.0" fitWidth="383.0">
+               <image>
+                  <Image url="@../../images/Allied-Bank.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="84.0" fitWidth="532.0" layoutX="382.0">
+               <image>
+                  <Image url="@../../images/s-l640.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="485.0" fitWidth="912.0" layoutY="84.0">
+               <image>
+                  <Image url="@../../images/istockphoto-1357687120-170667a.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="486.0" fitWidth="912.0" layoutY="84.0" opacity="0.48">
+               <image>
+                  <Image url="@../../images/images.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="443.0" fitWidth="545.0" layoutX="347.0" layoutY="105.0" opacity="0.69">
+               <image>
+                  <Image url="@../../images/images.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="fname" layoutX="398.0" layoutY="174.0" prefHeight="25.0" prefWidth="238.0" promptText="FIRST NAME" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+            <Label layoutX="556.0" layoutY="119.0" prefHeight="39.0" prefWidth="177.0" text="Create Account" textAlignment="JUSTIFY" textFill="#ff8c00">
+               <font>
+                  <Font name="Arial Narrow" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="151.0" layoutX="499.0" layoutY="199.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <TextField layoutX="398.0" layoutY="228.0" prefHeight="25.0" prefWidth="238.0" style="-fx-background-color: transparent;" />
+            <Line endX="151.0" layoutX="499.0" layoutY="253.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Line endX="151.0" layoutX="499.0" layoutY="305.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Line endX="151.0" layoutX="499.0" layoutY="359.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Line endX="151.0" layoutX="499.0" layoutY="409.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <Line endX="151.0" layoutX="499.0" layoutY="458.0" startX="-100.0">
+               <stroke>
+                  <LinearGradient endX="1.0" startX="1.0">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </stroke>
+            </Line>
+            <TextField fx:id="lname" layoutX="398.0" layoutY="228.0" prefHeight="25.0" prefWidth="238.0" promptText="LAST NAME" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+            <TextField fx:id="email" layoutX="398.0" layoutY="273.0" prefHeight="31.0" prefWidth="250.0" promptText="EMAIL" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+            <TextField fx:id="accountno" layoutX="398.0" layoutY="327.0" prefHeight="31.0" prefWidth="250.0" promptText="ACCOUNT NO" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+            <Button layoutX="429.0" layoutY="497.0" mnemonicParsing="false" onAction="#backButtonPressed" opacity="0.7" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 20px; -fx-background-color: cyan;" text="Back" textFill="RED" />
+            <Button layoutX="579.0" layoutY="497.0" mnemonicParsing="false" onAction="#createAccountPressed" opacity="0.77" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 20px; -fx-background-color: cyan;" text="Create" textFill="RED" />
+            <Button layoutX="733.0" layoutY="497.0" mnemonicParsing="false" onAction="#resetButtonPressed" opacity="0.7" prefHeight="25.0" prefWidth="114.0" style="-fx-background-radius: 20px; -fx-background-color: cyan;" text="Reset" textFill="RED" />
+            <Label fx:id="alert" alignment="TOP_CENTER" layoutX="653.0" layoutY="254.0" prefHeight="40.0" prefWidth="239.0" textFill="#00ff33">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="PIN" layoutX="399.0" layoutY="384.0" prefHeight="25.0" prefWidth="252.0" promptText="PIN" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+            <PasswordField fx:id="confirmPin" layoutX="399.0" layoutY="433.0" prefHeight="25.0" prefWidth="252.0" promptText="CONFIRM PIN" style="-fx-background-color: transparent; -fx-text-fill: white;" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
